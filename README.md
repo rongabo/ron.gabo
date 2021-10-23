@@ -1,0 +1,5 @@
+- 👋 Hi, I’m Ron Gabo
+- 👀 I’m interested in Information Systems
+- 🌱 I’m currently learning Industrial and Management engineering
+- 💞️ I’m looking to collaborate on git with my friends
+- 📫 How to reach me - rongab@post.bgu.ac.il
