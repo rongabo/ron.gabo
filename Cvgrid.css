@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+
+
+#Title { 
+    grid-area: title;
+    background-color: rgb(201, 238, 67);
+ }
+
+#Skills { 
+    grid-area: right;
+    background-color: rgb(218, 55, 55); }
+
+#volunteer { 
+    grid-area: footer;
+    background-color: rgb(164, 255, 191); }
+
+#Education { 
+    grid-area: left;
+    background-color: rgb(242, 177, 248); 
+}
+
+#MyCVGrid {
+    display: grid;
+    grid-template-areas: 
+    'title title'
+    'left right'
+    'footer footer';
+}
+
+@media screen and (max-width: 600px) {
+    #Title {
+        background-color: rgb(158, 25, 20);
+    }
+}
