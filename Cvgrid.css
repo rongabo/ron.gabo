@@ -36,3 +36,13 @@
         background-color: rgb(158, 25, 20);
     }
 }
+@keyframes title {
+    0% {background-color: rgb(85, 53, 53);}
+    10% {background-color: rgb(255, 0, 0);}
+    20% {background-color: rgb(122, 0, 0);}
+    30% {background-color: rgb(35, 41, 35);}
+    50% {background-color: rgb(128, 128, 128);}
+    70% {background-color: rgb(38, 131, 10);}
+    80% {background-color: rgb(16, 21, 46);}
+    100% {background-color: rgb(44, 90, 44);}
+    }
