@@ -4,6 +4,7 @@
     <title>Ron Gabo HTML Page</title>
 </head>
 <body>
+    {% include 'header.html' %}
   <h1>This Is My New Image</h1>
   <p>I hope you will enjoy my image</p>
 <img src="{{url_for('static', filename='images/internet-photo.jpeg') }}" alt="Wonderful sky" width="200" height="300">

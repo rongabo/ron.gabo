@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+{% include 'header.html' %}
 <h1> My Hobbies</h1>
 <div class="SubHeaders">
 
@@ -17,15 +18,15 @@
             <h3>TV Shows</h3>
         </a>
     </div>
-      {% if sport %}
-        <h3 class="section-title">Movies</h3>
-        <ul>
-            {% for s in sports %}
-                <li>{{ s | upper }}</li>
-            {% endfor %}
-        </ul>
+    {% if sport %}
+    <h3 class="section-title">Movies</h3>
+    <ul>
+        {% for s in sports %}
+        <li>{{ s | upper }}</li>
+        {% endfor %}
+    </ul>
     {% else %}
-        <h3 class="section-title">No Sports</h3>
+    <h3 class="section-title">No Sports</h3>
     {% endif %}
 </body>
 </html>

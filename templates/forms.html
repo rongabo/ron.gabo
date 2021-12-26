@@ -5,7 +5,8 @@
      <script src="{{ url_for('static', filename='js/forms.js') }}"></script>
 </head>
 <body>
-    <h1 class="title">sign in </h2>
+    {% include 'header.html' %}
+    <h1 class="title">sign in </h1>
     <p> enter your details to sign in</p>
     <form>
         <label for="fname">First name:</label><br>
