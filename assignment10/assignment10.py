@@ -21,7 +21,7 @@ def interact_db(query, query_type: str):
     connection = mysql.connector.connect(host='localhost',
                                          user='root',
                                          password='root',
-                                         database='web')
+                                         database='web_schema_ron')
     cursor = connection.cursor(named_tuple=True)
     cursor.execute(query)
 
