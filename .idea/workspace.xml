@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9770143-5d99-4225-8cbe-92d11c39e404" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ron.gabo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ron.gabo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment10/assignment10.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment10/assignment10.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Cvgrid.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Cvgrid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Tv.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Tv.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assignment8.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assignment8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/computer_game.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/computer_game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cv.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cv.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/exercise2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/exercise2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forms.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,29 +64,61 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1876" height="279" key="GridCell.Tab.0.bottom" timestamp="1640506437204">
-      <screen x="1920" y="25" width="1920" height="1055" />
+    <state width="1876" height="249" key="GridCell.Tab.0.bottom" timestamp="1641308844816">
+      <screen x="3712" y="101" width="1920" height="966" />
     </state>
     <state width="1876" height="279" key="GridCell.Tab.0.bottom/1920.25.1920.1055/0.25.1920.966@1920.25.1920.1055" timestamp="1640506437204" />
-    <state width="1876" height="279" key="GridCell.Tab.0.center" timestamp="1640506437203">
-      <screen x="1920" y="25" width="1920" height="1055" />
+    <state width="1876" height="249" key="GridCell.Tab.0.bottom/3712.101.1920.966/1792.101.1920.1055/0.25.1792.1095@3712.101.1920.966" timestamp="1641308844816" />
+    <state width="1876" height="249" key="GridCell.Tab.0.center" timestamp="1641308844814">
+      <screen x="3712" y="101" width="1920" height="966" />
     </state>
     <state width="1876" height="279" key="GridCell.Tab.0.center/1920.25.1920.1055/0.25.1920.966@1920.25.1920.1055" timestamp="1640506437203" />
-    <state width="1876" height="279" key="GridCell.Tab.0.left" timestamp="1640506437202">
-      <screen x="1920" y="25" width="1920" height="1055" />
+    <state width="1876" height="249" key="GridCell.Tab.0.center/3712.101.1920.966/1792.101.1920.1055/0.25.1792.1095@3712.101.1920.966" timestamp="1641308844814" />
+    <state width="1876" height="249" key="GridCell.Tab.0.left" timestamp="1641308844813">
+      <screen x="3712" y="101" width="1920" height="966" />
     </state>
     <state width="1876" height="279" key="GridCell.Tab.0.left/1920.25.1920.1055/0.25.1920.966@1920.25.1920.1055" timestamp="1640506437202" />
-    <state width="1876" height="279" key="GridCell.Tab.0.right" timestamp="1640506437203">
-      <screen x="1920" y="25" width="1920" height="1055" />
+    <state width="1876" height="249" key="GridCell.Tab.0.left/3712.101.1920.966/1792.101.1920.1055/0.25.1792.1095@3712.101.1920.966" timestamp="1641308844813" />
+    <state width="1876" height="249" key="GridCell.Tab.0.right" timestamp="1641308844815">
+      <screen x="3712" y="101" width="1920" height="966" />
     </state>
     <state width="1876" height="279" key="GridCell.Tab.0.right/1920.25.1920.1055/0.25.1920.966@1920.25.1920.1055" timestamp="1640506437203" />
+    <state width="1876" height="249" key="GridCell.Tab.0.right/3712.101.1920.966/1792.101.1920.1055/0.25.1792.1095@3712.101.1920.966" timestamp="1641308844815" />
+    <state width="1876" height="309" key="GridCell.Tab.1.bottom" timestamp="1641308080250">
+      <screen x="3712" y="101" width="1920" height="966" />
+    </state>
+    <state width="1876" height="309" key="GridCell.Tab.1.bottom/3712.101.1920.966/1792.101.1920.1055/0.25.1792.1095@3712.101.1920.966" timestamp="1641308080250" />
+    <state width="1876" height="309" key="GridCell.Tab.1.center" timestamp="1641308080247">
+      <screen x="3712" y="101" width="1920" height="966" />
+    </state>
+    <state width="1876" height="309" key="GridCell.Tab.1.center/3712.101.1920.966/1792.101.1920.1055/0.25.1792.1095@3712.101.1920.966" timestamp="1641308080247" />
+    <state width="1876" height="309" key="GridCell.Tab.1.left" timestamp="1641308080246">
+      <screen x="3712" y="101" width="1920" height="966" />
+    </state>
+    <state width="1876" height="309" key="GridCell.Tab.1.left/3712.101.1920.966/1792.101.1920.1055/0.25.1792.1095@3712.101.1920.966" timestamp="1641308080246" />
+    <state width="1876" height="309" key="GridCell.Tab.1.right" timestamp="1641308080249">
+      <screen x="3712" y="101" width="1920" height="966" />
+    </state>
+    <state width="1876" height="309" key="GridCell.Tab.1.right/3712.101.1920.966/1792.101.1920.1055/0.25.1792.1095@3712.101.1920.966" timestamp="1641308080249" />
     <state x="2712" y="254" key="VCS.ChangeListViewerDialog" timestamp="1640467938210">
       <screen x="1920" y="25" width="1920" height="1055" />
     </state>
     <state x="2712" y="254" key="VCS.ChangeListViewerDialog/1920.25.1920.1055/0.25.1920.966@1920.25.1920.1055" timestamp="1640467938210" />
-    <state x="2579" y="307" width="602" height="490" key="find.popup" timestamp="1640506335008">
-      <screen x="1920" y="25" width="1920" height="1055" />
+    <state x="4371" y="359" width="602" height="490" key="find.popup" timestamp="1641308114928">
+      <screen x="3712" y="101" width="1920" height="966" />
     </state>
     <state x="2579" y="307" width="602" height="490" key="find.popup/1920.25.1920.1055/0.25.1920.966@1920.25.1920.1055" timestamp="1640506335008" />
+    <state x="4371" y="359" width="602" height="490" key="find.popup/3712.101.1920.966/1792.101.1920.1055/0.25.1792.1095@3712.101.1920.966" timestamp="1641308114928" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/assignment10/assignment10.py</url>
+          <line>119</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

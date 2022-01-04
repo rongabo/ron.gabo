@@ -1,12 +1,14 @@
+import json
 import random
 import string
 
-from flask import Flask, request, render_template, session, url_for, redirect, Blueprint ,flash
-import mysql, mysql.connector
+import mysql
+import mysql.connector
+import requests
+from flask import Flask, request, render_template, session, redirect, Blueprint, flash, Response
 
 app = Flask(__name__)
 app.secret_key = ''.join(random.choices(string.ascii_uppercase + string.digits, k=16))
-
 
 assignment10 = Blueprint(
     'assignment10',
@@ -15,6 +17,7 @@ assignment10 = Blueprint(
     static_url_path='/assignment10',
     template_folder='templates'
 )
+
 
 def interact_db(query, query_type: str):
     return_value = False
@@ -43,13 +46,12 @@ def exercise10():
     if session.get('messages'):
         x = session['messages']
         session.pop('messages')
-        return render_template('assignment10.html', users=users, messages = x)
+        return render_template('assignment10.html', users=users, messages=x)
     else:
         return render_template('assignment10.html', users=users)
 
 
-
-@assignment10.route('/insert', methods=['GET','POST'])
+@assignment10.route('/insert', methods=['GET', 'POST'])
 def insert():
     if request.method == 'POST':
         user_name = request.form['user_name']
@@ -59,7 +61,7 @@ def insert():
         answer = interact_db(query=check_input, query_type='fetch')
         if len(answer) == 0:
             query = "insert into web_schema_ron.users(user_name, user_first_name , email)\
-                            value ('%s', '%s', '%s');" % (user_name,user_first_name , email)
+                            value ('%s', '%s', '%s');" % (user_name, user_first_name, email)
             interact_db(query=query, query_type='commit')
             flash('user added to data base ')
             return redirect('/assignment10')
@@ -69,16 +71,15 @@ def insert():
     return render_template('assignment10.html', req_method=request.method)
 
 
-@assignment10.route('/update', methods=['GET','POST'])
+@assignment10.route('/update', methods=['GET', 'POST'])
 def update():
-        user_name = request.form['user_name']
-        user_first_name = request.form['user_first_name']
-        email = request.form['email']
-        query = " UPDATE web_schema_ron.users SET user_first_name='%s', email='%s' WHERE user_name='%s';"%\
-                (user_first_name,email,user_name)
-        interact_db(query=query, query_type='commit')
-        return redirect('/assignment10')
-
+    user_name = request.form['user_name']
+    user_first_name = request.form['user_first_name']
+    email = request.form['email']
+    query = " UPDATE web_schema_ron.users SET user_first_name='%s', email='%s' WHERE user_name='%s';" % \
+            (user_first_name, email, user_name)
+    interact_db(query=query, query_type='commit')
+    return redirect('/assignment10')
 
 
 @assignment10.route('/delete', methods=['POST'])
@@ -96,4 +97,25 @@ def delete():
         return redirect('/assignment10')
 
 
+@assignment10.route('/assignment11/users')
+def users():
+    users_ = interact_db(query="select * from web_schema_ron.users", query_type='fetch')
+    return Response(json.dumps(users_), mimetype='application/json')
 
+
+@assignment10.route('/req_frontend')
+def req_frontend():
+    return render_template('req_frontend.html')
+
+
+@assignment10.route('/req_backend')
+def req_backend():
+    user = request.args.get('number')
+    data = None
+    if user:
+        try:
+            res = requests.get("https://reqres.in/api/users/%s" % user, verify=False)
+            data = res.json()['data']
+        except Exception as e:
+            data = ''
+    return render_template('req_backend.html', user_data=data)
