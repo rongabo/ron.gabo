@@ -119,3 +119,18 @@ def req_backend():
         except Exception as e:
             data = ''
     return render_template('req_backend.html', user_data=data)
+
+
+
+
+@assignment10.route('/assignment12/restapi_users', defaults={'user_id': 1})
+@assignment10.route('/assignment12/restapi_users/<int:user_id>')
+def get_user_data(user_id):
+    query = f'''
+    SELECT * from users WHERE user_id={user_id}
+    '''
+
+    user_data = interact_db(query=query, query_type='fetch', named_tuple=None, dictionary=True)
+    if not user_data:
+        user_data = {'error': f'user  id {user_id}  not found'}
+    return Response(json.dumps(user_data), mimetype='application/json')
