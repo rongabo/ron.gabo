@@ -1,0 +1,14 @@
+{% include 'header.html' %}
+
+
+{% block tohen %}
+    <h1>Req Frontend</h1>
+    <form action="/req_backend" method="GET" name="front">
+        <input type="number" name="number">
+    </form>
+    <h2>Users list <button onclick="getUsers()">Get Users</button></h2>
+    <main>
+
+    </main>
+{% endblock %}
+<script src="{{ url_for('assignment10.static', filename='js/assignment11.js') }}"></script>

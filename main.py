@@ -2,10 +2,10 @@ import random
 import string
 
 from flask import Flask, request, render_template, session, url_for, redirect
-
+from assignment10.assignment10 import assignment10
 app = Flask(__name__)
 app.secret_key = ''.join(random.choices(string.ascii_uppercase + string.digits, k=16))
-
+app.register_blueprint(assignment10)
 users = [
     {'user_name': 'Ron', 'email': 'Ron@gmail.com', 'User Name': 'Ron1'},
     {'user_name': 'Eden', 'email': 'Eden@gmail.com', 'User Name': 'Eden1'},
