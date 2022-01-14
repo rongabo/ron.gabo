@@ -107,7 +107,6 @@ def users():
 def req_frontend():
     return render_template('req_frontend.html')
 
-<<<<<<< HEAD
 
 @assignment10.route('/req_backend')
 def req_backend():
@@ -120,8 +119,6 @@ def req_backend():
         except Exception as e:
             data = ''
     return render_template('req_backend.html', user_data=data)
-
-
 
 
 @assignment10.route('/assignment12/restapi_users', defaults={'user_id': 1})
@@ -131,21 +128,6 @@ def get_user_data(user_id):
     SELECT * from users WHERE user_id={user_id}
     '''
 
-    user_data = interact_db(query=query, query_type='fetch', named_tuple=None, dictionary=True)
-    if not user_data:
-        user_data = {'error': f'user  id {user_id}  not found'}
+    user_data = interact_db(query=query, query_type='fetch')
+    user_data = user_data if user_data else {'errorMessage': 'User %s was not found!' % user_id}
     return Response(json.dumps(user_data), mimetype='application/json')
-=======
-
-@assignment10.route('/req_backend')
-def req_backend():
-    user = request.args.get('number')
-    data = None
-    if user:
-        try:
-            res = requests.get("https://reqres.in/api/users/%s" % user, verify=False)
-            data = res.json()['data']
-        except Exception as e:
-            data = ''
-    return render_template('req_backend.html', user_data=data)
->>>>>>> 2c3a732187355a7d2553c04d258246758ace19ed
