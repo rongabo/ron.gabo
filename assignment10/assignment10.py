@@ -107,6 +107,7 @@ def users():
 def req_frontend():
     return render_template('req_frontend.html')
 
+<<<<<<< HEAD
 
 @assignment10.route('/req_backend')
 def req_backend():
@@ -134,3 +135,17 @@ def get_user_data(user_id):
     if not user_data:
         user_data = {'error': f'user  id {user_id}  not found'}
     return Response(json.dumps(user_data), mimetype='application/json')
+=======
+
+@assignment10.route('/req_backend')
+def req_backend():
+    user = request.args.get('number')
+    data = None
+    if user:
+        try:
+            res = requests.get("https://reqres.in/api/users/%s" % user, verify=False)
+            data = res.json()['data']
+        except Exception as e:
+            data = ''
+    return render_template('req_backend.html', user_data=data)
+>>>>>>> 2c3a732187355a7d2553c04d258246758ace19ed
